@@ -33,6 +33,9 @@ jobs:
       
       - name: Show dotnet version
         run: dotnet --version ./NotificationsPoC.sln
+      
+      - name: Install dotnet-format tool
+        run: dotnet tool install -g dotnet-format
         
       - name: Run dotnet format
         run: dotnet format --check
