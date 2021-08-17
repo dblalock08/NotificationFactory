@@ -35,4 +35,4 @@ jobs:
         run: dotnet --version
         
       - name: Run dotnet format
-        run: dotnet format --check ./NotificationsPoC.sln
+        run: dotnet format --check
