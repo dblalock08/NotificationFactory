@@ -11,7 +11,7 @@ namespace TTCMiddleTier.Services.Notifications
                 case EnumNotificationScope.AllUsers:
                     return new AllUsers()
                     {
-                                Id = data.Id,
+                        Id = data.Id,
                         Name = data.Name,
                         Text = data.Text
                     };
@@ -21,7 +21,7 @@ namespace TTCMiddleTier.Services.Notifications
                         Id = data.Id,
                         Name = data.Name,
                         Text = data.Text
-                               };
+                    };
                 case EnumNotificationScope.AllEmployers:
                     return new EmployersOnly
                     {
@@ -29,7 +29,7 @@ namespace TTCMiddleTier.Services.Notifications
                         Name = data.Name,
                         Text = data.Text
                     };
-                         case EnumNotificationScope.JobseekersBeforeDate:
+                case EnumNotificationScope.JobseekersBeforeDate:
                     return new JobseekersBeforeDate
                     {
                         Id = data.Id,
