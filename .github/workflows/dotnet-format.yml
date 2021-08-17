@@ -32,10 +32,10 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
       
       - name: Show dotnet version
-        run: dotnet --version ./NotificationsPoC.sln
+        run: dotnet --version
       
       - name: Install dotnet-format tool
         run: dotnet tool install -g dotnet-format
         
       - name: Run dotnet format
-        run: dotnet-format --check
+        run: dotnet-format --check ./NotificationsPoC.sln
