@@ -25,7 +25,10 @@ namespace TTCMiddleTier.Services.Notifications
                 Name = "Notification just for Jobseekers",
                 Text = "Attention all jobseekers, please read this.",
                 TypeEnum = EnumNotificationType.Banner,
-                ScopeEnum = EnumNotificationScope.AllJobSeekers
+
+
+
+                                ScopeEnum = EnumNotificationScope.AllJobSeekers
             });
         }
 
@@ -39,7 +42,7 @@ namespace TTCMiddleTier.Services.Notifications
                 switch (item.TypeEnum)
                 {
                     case EnumNotificationType.Banner:
-                    default:
+                                    default:
                         notificationsList.Add(BannerFactory.GetBanner(item));
                         break;
                 }
