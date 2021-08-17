@@ -39,7 +39,7 @@ namespace TTCMiddleTier.Services.Notifications
             // Get list of all notifications and build Notifications using the factory
             foreach (var item in _notificationListMockDatabase)
             {
-                switch (item.TypeEnum)
+                            switch (item.TypeEnum)
                 {
                     case EnumNotificationType.Banner:
                                     default:
