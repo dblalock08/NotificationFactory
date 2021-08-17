@@ -32,7 +32,7 @@ jobs:
           dotnet-version: ${{ matrix.dotnet-version }}
       
       - name: Show dotnet version
-        run: dotnet --version
+        run: dotnet --version ./NotificationsPoC.sln
         
       - name: Run dotnet format
         run: dotnet format --check
