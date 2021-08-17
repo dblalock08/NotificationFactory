@@ -47,5 +47,6 @@ jobs:
           git config --global user.name 'Github Actions Linter'
           git config --global user.email '@frontlineed.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git checkout ${{ github.head_ref }}
           git commit -am "Run dotnet-format on solution."
           git push
